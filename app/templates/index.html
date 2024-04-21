@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda Virtual</title>
+</head>
+<body>
+    <h1>
+        <strike>Gelax</strike> <h1>Articulos de electronica</h1>
+    </h1>
+    <p> Bienvenidos a la primera fase de "GELAX" una nueva tienda virtual en la que encontraras diferentes tipos de articulos tecnologicos,
+        A continuacion se le mostraran distintas funciones que podemos realizar en esta tienda.
+    </p>
+  <!-- Formulario para agregar un producto -->
+  <h2>Agregar producto</h2>
+  <form action="/add" method="post">
+      <input type="text" name="name" placeholder="Nombre del producto" required>
+      <input type="number" name="price" placeholder="Precio" required>
+      <input type="number" name="min_stock" placeholder="Stock mínimo" required>
+      <input type="number" name="max_stock" placeholder="Stock máximo" required>
+      <button type="submit">Agregar producto</button>
+
+  <!-- Formulario para eliminar un producto -->
+  <h2>Eliminar producto</h2>
+  <form action="/delete" method="post">
+      <input type="text" name="name" placeholder="Nombre del producto" required>
+      <button type="submit">Eliminar producto</button>
+  </form>
+
+  <!-- Formulario para actualizar un producto -->
+  <h2>Actualizar producto</h2>
+  <form action="/update" method="post">
+      <input type="text" name="name" placeholder="Nombre del producto" required>
+      <input type="number" name="price" placeholder="Nuevo precio">
+      <input type="number" name="min_stock" placeholder="Nuevo stock mínimo">
+      <input type="number" name="max_stock" placeholder="Nuevo stock máximo">
+      <button type="submit">Actualizar producto</button>
+  </form>
+
+  <!-- Formulario para registrar una venta -->
+  <h2>Registrar venta</h2>
+  <form action="/sales" method="post">
+      <input type="text" name="name" placeholder="Nombre del producto" required>
+      <input type="number" name="quantity" placeholder="Cantidad vendida" required>
+      <button type="submit">Registrar venta</button>
+  </form>
+    <header>
+        <h1>Catálogo de Productos Electrónicos</h1>
+    </header>
+    <section>
+        <!-- Lista de productos -->
+        <article>
+            <h2>PC GAMER (Xtreme PC Gamer AMD Radeon Vega Renoir Ryzen 5 5600G 16GB SSD 120GB 2TB WIFI Black)</h2>
+            <img src="https://www.xtremepc.com.mx/cdn/shop/files/51136ca4-14b8-4252-9fee-91a606bdaf65_800x.png?v=1704927373" width="300px">
+            <p>
+            ALMACENAMIENTO  SSD 120GB / HDD 2TB<br>
+            CHIPSET AMD B450<br>
+            FUENTE DE PODER 600W<br>
+            GRÁFICOS    AMD Radeon Graphics<br>
+            MARCA   XTREME PC GAMING<br>
+            MEMORIA RAM 16GB 3200MHz<br>
+            MONITOR NO INCLUIDO<br>
+            PROCESADOR  AMD Ryzen 5 5600G<br>
+            RED Ethernet / Adaptador WIFI<br>
+            SISTEMA OPERATIVO   Windows 10 Version de prueba<br>
+            </p>
+            <p>Precio: $6,699.00</p>
+        </article>
+        <article>
+            <h2>Samsung Galaxy S23 Ultra 512Gb 12Gb 5G
+            </h2>
+            <img src="https://innovacellcr.com/cdn/shop/files/samsung-galaxy-s23-ultra-512gb-12gb-5g-innovacell-2-24280844959833.png?v=1706811100" width="300px">
+            <p>PANTALLA
+            Tamaño de pantalla: 6.8"<br>
+            Resolución: 1440 x 3088 pixels<br>
+            Tipo de pantalla: Dynamic AMOLED 2X, 120 Hz, HDR10+, 1750 nits (pico)<br>
+            ALMACENAMIENTO  256Gb<br>
+            MEMORIA INTERNA 12Gb RAM<br>
+            PROCESADOR  Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4nm)<br>
+            SISTEMA OPERATIVO   Android 13<br>
+            CÁMARA PRINCIPAL<br>    
+            200 MP, f/1,7, 24 mm (gran angular), 1/1,3", 0,6 µm, PDAF multidireccional, AF láser, OIS
+            10 MP, f/4,9, 230 mm (telefoto periscopio), 1/3,52", 1,12 µm, Dual Pixel PDAF, OIS, zoom óptico 10x
+            10 MP, f/2.4, 70 mm (teleobjetivo), 1/3,52", 1,12 µm, Dual Pixel PDAF, OIS, zoom óptico 3x
+            12 MP, f/2.2, 13 mm, 120˚ ( ultraancho), 1/2,55", 1,4 µm, Dual Pixel PDAF, vídeo Super Steady
+            CÁMARA FRONTAL  12 MP, f/2.2, 26 mm (ancho), PDAF de doble píxel<br>
+            BATERÍA Li-Ion 5000 mAh<br>
+            CONECTIVIDAD<br>    
+            Wi-Fi 802.11 a/b/g/n/ac/6e, tribanda, Wi-Fi Direct Wi-Fi 802.11 a/b/g/n/ac/6e, doble banda, Wi-Fi Direct
+            Bluetooth 5.3, A2DP, LE 5.2, A2DP, LE
+            GPS, GLONASS, BDS, GALILEO GPS, GLONASS, BDS, GALILEO
+            NFC
+            RESISTENCIA AL AGUA Resistente al polvo/agua IP68 (hasta 1,5 m durante 30 minutos)<br>
+            SENSORES<br>    
+            Huella digital (debajo de la pantalla, ultrasónica)<br>
+            Acelerómetro<br>
+            Giroscopio<br>
+            Proximidad<br>
+            Brújula<br>
+            Barómetro<br>
+            DIMENSIONES 163,4 x 78,1 x 8,9 mm<br>
+            PESO    234g</p>
+            <p>Precio: $589.950,00</p>
+        </article>
+    </section>
+    <footer>
+        <p>Gelax - Todos los derechos reservados © 2024</p>
+    </footer>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Informe de Ventas</title>
+</head>
+<body>
+    <h1>Informe de Ventas</h1>
+    <table>
+        <tr>
+            <th>Nombre del producto</th>
+            <th>Cantidad vendida</th>
+            <th>Precio total</th>
+        </tr>
+        {% for sale in sales_report %}
+        <tr>
+            <td>{{ sale.name }}</td>
+            <td>{{ sale.quantity_sold }}</td>
+            <td>{{ sale.total_price }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Volver a la página de inicio</a>
+</body>
+</html>
+
+</body>
+</html>
